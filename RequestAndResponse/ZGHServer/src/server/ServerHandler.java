@@ -1,17 +1,14 @@
 package server;
 
-import controller.IndexController;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.PrintWriter;
 import java.net.Socket;
 import java.util.HashMap;
 
-public class ServerHandler extends Thread{
 
-    private String content;
-    private HashMap<String,String> paramsMap;
+public class ServerHandler extends Thread{
 
     private Socket socket;
     public ServerHandler(Socket socket){
@@ -40,6 +37,8 @@ public class ServerHandler extends Thread{
 
     //解析
     private void parseContentAndParams(String contentAndParams){
+        String content = null;
+        HashMap<String,String> paramsMap = null;
         int questionMarkIndex = contentAndParams.indexOf("?");
         if(questionMarkIndex != -1){//携带了参数
             content = contentAndParams.substring(0,questionMarkIndex);
@@ -54,24 +53,26 @@ public class ServerHandler extends Thread{
             content = contentAndParams;
         }
         //-------------自此，将请求发送过来的字符串解析完毕了----------------------
-        //资源--content
-        //参数--paramsMap
-        this.findController();
-    }
-
-    //找--控制层(controller或者action或者servlet)--干活
-    private void findController(){
-        if("index".equals(content)){
-            IndexController ic = new IndexController();
-            ic.test();
-        }else{
-            System.out.println("不相等");
-        }
+        //自己创建两个对象
+        //一个是为了包含所有请求携带的信息（现在有：资源--content，参数--paramsMap）
+        //另一个是为了接收响应回来的结果，创建时是空对象，在Controller执行完毕后，将其填满
+        HttpServletRequest request = new HttpServletRequest(content,paramsMap);
+        HttpServletResponse response = new HttpServletResponse();
+        ServletController.findController(request,response);
+        //-------------上面这个方法执行完毕，真实的Controller里面的那个service方法执行完了--------------------------------
+        // response对象内应该就有响应的消息了
+        this.responseToBrowser(response);
     }
 
     //响应回去
-    private void responseToBrowser(){
-
+    private void responseToBrowser(HttpServletResponse response){
+        try {
+            PrintWriter out = new PrintWriter(socket.getOutputStream());
+            out.println(response.getResponseContent());
+            out.flush();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 
