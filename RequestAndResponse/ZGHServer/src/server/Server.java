@@ -9,7 +9,9 @@ public class Server {
     public void startServer(){
         System.out.println("====启动服务器====");
         try {
-            ServerSocket server = new ServerSocket(8888);
+            //获取配置文件server.properties中的port
+            int port = Integer.parseInt(ServerFileReader.getValue("port"));
+            ServerSocket server = new ServerSocket(port);
             while(true){
                 Socket socket = server.accept();
                 new ServerHandler(socket).start();
