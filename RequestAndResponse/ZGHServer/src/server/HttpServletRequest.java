@@ -8,10 +8,13 @@ public class HttpServletRequest {
     private HashMap<String,String> paramsMap;
 
     public HttpServletRequest(){}
-
     public HttpServletRequest(String contnet, HashMap<String, String> paramsMap) {
         this.contnet = contnet;
         this.paramsMap = paramsMap;
+    }
+
+    public String getParameter(String key){
+        return this.paramsMap.get(key);
     }
 
     public String getContnet() {
@@ -20,10 +23,6 @@ public class HttpServletRequest {
 
     public void setContnet(String contnet) {
         this.contnet = contnet;
-    }
-
-    public HashMap<String, String> getParamsMap() {
-        return paramsMap;
     }
 
     public void setParamsMap(HashMap<String, String> paramsMap) {

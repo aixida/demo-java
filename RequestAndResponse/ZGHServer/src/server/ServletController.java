@@ -62,7 +62,7 @@ public class ServletController {
             Class controllerClass = controllerObj.getClass();
             Method method = controllerClass.getMethod("service", HttpServletRequest.class, HttpServletResponse.class);
             method.invoke(controllerObj, request, response);
-        } catch (ClassNotFoundException e) {
+        } catch (NullPointerException e) {
             response.write("请求的"+content+"Controller不存在");
         } catch (NoSuchMethodException e){
             response.write("405,没有可以执行的方法");
