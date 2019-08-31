@@ -9,13 +9,18 @@ demo to learn java
 3. IOC控制权对象反转
 4. 生命周期托管方式实现单例模式
 
+
 ## AtmSystem
 > **模拟一个Atm系统**，由GUI来显示
 1. MySQL
 2. 用dao层实现jdbc
 
+
 ## ORM
-> **模拟数据库连接池+对ORM框架的封装**
+> **模拟JDBC连接池+对ORM框架的封装**
+1. properties配置文件的使用
+2. 
+
 
 ## RequestAndResponse
 > **模拟请求与响应的过程**，学习J2EE之前的准备
