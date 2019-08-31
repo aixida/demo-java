@@ -19,7 +19,8 @@ demo to learn java
 ## ORM
 > **模拟JDBC连接池+对ORM框架的封装**
 1. properties配置文件的使用
-2. 
+2. 静态代理模式
+3. 
 
 
 ## RequestAndResponse
