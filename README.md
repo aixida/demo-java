@@ -20,7 +20,7 @@ demo to learn java
 > **模拟JDBC连接池+对ORM框架的封装**
 1. properties配置文件的使用
 2. 静态代理模式
-3. 
+3. 自定义注解的使用（dao层中用注解传输SQL语句以及各种信息），动态代理模式（使用jdk提供的动态代理类Proxy），最后把dao层变成接口
 
 
 ## RequestAndResponse
