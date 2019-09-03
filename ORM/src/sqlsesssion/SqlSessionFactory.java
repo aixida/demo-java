@@ -123,6 +123,8 @@ public class SqlSessionFactory {
         Matcher matcher = linePattern.matcher(str);
         StringBuilder sb = new StringBuilder();
         while (matcher.find()) {
+            //appendReplacement：将当前匹配的子字符串替换为指定的字符串，并且将替换后的字符串及其之前到上次匹配的子字符串之后的字符串添加到一个StringBuilder对象中。
+            //appendTail：将最后一次匹配之后的字符串添加到一个StringBuilder对象中。
             matcher.appendReplacement(sb,matcher.group(1).toUpperCase());
         }
         matcher.appendTail(sb);

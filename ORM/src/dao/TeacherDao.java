@@ -25,7 +25,7 @@ public interface TeacherDao {
     //新增一条记录
     @SQL(sql = "INSERT INTO TEACHER(TID,TNAME,TSEX,TBIRTHDAY) VALUES(?,?,?,?)",
             type = SQLEnums.IESERT)
-    public long insert(Teacher teacher)throws SQLException;
+    public long insert(@Param({"id","name","sex","birthday"})int id,String name,String sex,String birthday)throws SQLException;
 
 
     //查询单条记录
