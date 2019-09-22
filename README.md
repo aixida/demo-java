@@ -42,4 +42,4 @@ demo to learn java
 - M（service，dao，domain三个层次和jdbc）
 - DB（MySql）
 
-**思路：**
+**思路：**[使用Tomcat9，模拟B/S模式的Atm系统（仅仅只使用了Servlet）](https://juejin.im/post/5d8718275188253f116b8ee7)
