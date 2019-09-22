@@ -32,5 +32,12 @@ demo to learn java
 5. 对html标签的模拟
 
 ## AtmForServlet
-> 用Servlet的知识，在idea中创建一个web项目，实现银行的Atm系统（B/S模式）
-- [AtmForServlet.md](https://github.com/Zhangguohao666/demo-java/blob/master/AtmForServlet.md)
+> 使用idea和Tomcat：Servlet，HTML来实现以一个银行系统（B/S模式）
+
+**结构**
+- V（HTML，JSP）
+- C（Servlet）
+- M（service，dao，domain三个层次和jdbc）
+- DB（MySql）
+
+**思路：**
