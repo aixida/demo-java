@@ -31,3 +31,15 @@ demo to learn java
 4. 线程，集合，面向对象
 5. 对html标签的模拟
 
+**思路：**[Servlet 模拟浏览器与服务器之间：请求与响应的过程](https://juejin.im/post/5d85ebd1f265da03b76b5cdf)
+
+## AtmForServlet
+> 使用idea和Tomcat：Servlet，HTML来实现以一个银行系统（B/S模式）
+
+**结构**
+- V（HTML，JSP）
+- C（Servlet）
+- M（service，dao，domain三个层次和jdbc）
+- DB（MySql）
+
+**思路：**
