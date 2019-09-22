@@ -7,29 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a8791fab-dfe5-4c7d-9cda-68993f1bd2b2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/AtmForServlet_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_16.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AtmForServlet.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/DepositController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/DoDepositController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/DoTransferContraller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/DoWithdrawContraller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/QueryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/TransferController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/WithdrawController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/AtmDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/Atm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/AtmService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/util/MySpring.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-8.0.16.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AtmProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AtmProject/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ExamSystem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ExamSystem/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ORM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ORM/.idea/workspace.xml" afterDir="false" />
@@ -347,7 +324,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="23" width="1550" height="848" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17895442" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -379,6 +355,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="idea+Tomcat9:模拟ATM系统（B/S模式），仅使用Servlet" />
+    <option name="LAST_COMMIT_MESSAGE" value="idea+Tomcat9:模拟ATM系统（B/S模式），仅使用Servlet" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/artifacts/AtmForServlet_war_exploded.xml">
